@@ -1,0 +1,6 @@
+//Items
+item.morbus_brick.name=Morbus Brick
+
+//Blocks
+tile.morbus_dirt_block.name=Morbus Dirt
+tile.morbus_brick_block.name=Morbus Bricks Block

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern": 
+    [
+        "OOO",
+        "OIO",
+        "OOO"
+    ],
+    "key":
+    {
+        "O":
+        {
+        "item":"minecraft:dirt",
+        "data": 0
+        },
+        "I":
+        {
+        "item":"morbus:morbus_brick"
+        }
+    },
+    "result":
+    {
+        "item": "morbus:morbus_dirt_block",
+        "count": 8
+    }
+}

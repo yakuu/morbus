@@ -1,0 +1,14 @@
+{
+    "conditions": [{
+        "type": "minecraft:item_exists",
+        "item": "morbus:morbus_brick_block"
+    }],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        { "item": "morbus:morbus_brick" },
+        { "item": "morbus:morbus_brick" },
+        { "item": "morbus:morbus_brick" },
+        { "item": "morbus:morbus_brick" }
+    ],
+    "result": { "item": "morbus:morbus_brick_block"}
+}

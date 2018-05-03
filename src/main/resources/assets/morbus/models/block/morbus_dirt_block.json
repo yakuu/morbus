@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "morbus:blocks/morbus_dirt_block"
+   }
+}
