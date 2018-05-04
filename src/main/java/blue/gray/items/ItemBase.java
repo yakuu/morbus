@@ -5,6 +5,8 @@ import blue.gray.init.ModItems;
 import blue.gray.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.event.entity.player.ItemTooltipEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ItemBase extends Item implements IHasModel {
 
@@ -22,5 +24,12 @@ public class ItemBase extends Item implements IHasModel {
 	{
 		Main.proxy.registerItemRenderer(this, 0,"inventory");
 	}
+	
+	@SubscribeEvent
+	public void itemToolTip(ItemTooltipEvent event) 
+	{
+		
+	}
+	
 
 }

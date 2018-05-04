@@ -5,6 +5,7 @@ import blue.gray.init.ModCrafting;
 import blue.gray.init.ModItems;
 import blue.gray.proxy.CommonProxy;
 import blue.gray.util.Reference;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -35,7 +36,7 @@ public class Main
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event)
 	{
-		
+		MinecraftForge.EVENT_BUS.register(new blue.gray.util.handlers.EventHandler());
 	}
 }
 
