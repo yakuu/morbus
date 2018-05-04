@@ -4,3 +4,5 @@ item.morbus_brick.name=Morbus Brick
 //Blocks
 tile.morbus_dirt_block.name=Morbus Dirt
 tile.morbus_brick_block.name=Morbus Bricks Block
+tile.morbus_bedrock_block.name=Morbus Bedrock
+tile.morbus_ore_block.name=Morbus Ore
