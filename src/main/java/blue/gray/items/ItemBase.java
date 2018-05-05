@@ -28,7 +28,7 @@ public class ItemBase extends Item implements IHasModel {
 	@SubscribeEvent
 	public void itemToolTip(ItemTooltipEvent event) 
 	{
-		
+
 	}
 	
 
