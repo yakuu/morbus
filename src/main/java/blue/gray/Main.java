@@ -1,5 +1,6 @@
 package blue.gray;
 
+import blue.gray.gui.GuiOverlay;
 import blue.gray.init.ModBlocks;
 import blue.gray.init.ModCrafting;
 import blue.gray.init.ModItems;
@@ -37,6 +38,7 @@ public class Main
 	public static void Postinit(FMLPostInitializationEvent event)
 	{
 		MinecraftForge.EVENT_BUS.register(new blue.gray.util.handlers.EventHandler());
+		MinecraftForge.EVENT_BUS.register(new GuiOverlay());
 	}
 }
 

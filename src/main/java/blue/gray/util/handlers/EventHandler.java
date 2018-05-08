@@ -2,16 +2,22 @@ package blue.gray.util.handlers;
 
 import java.util.Random;
 
+import blue.gray.gui.GuiOverlay;
 import blue.gray.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class EventHandler {
-
+	
+	
 	//Drops Morbus_Brick if any monster is hit by Minecraft:Brick || Only Main Hand so far, maybe getHeldItemMainhand(Hand) soon
 	@SubscribeEvent
 	public void livingHurt(LivingHurtEvent event) {

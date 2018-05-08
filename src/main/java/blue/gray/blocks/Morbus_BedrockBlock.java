@@ -11,7 +11,6 @@ public class Morbus_BedrockBlock extends BlockBase
 		setSoundType(SoundType.ANVIL);
 		setHardness(31.5F);
 		setResistance(1300F);
-		setHarvestLevel("pickaxe", 2);
 		setLightLevel(1F);
 		//setLightOpacity(1);
 		setBlockUnbreakable();

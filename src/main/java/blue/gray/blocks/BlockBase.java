@@ -24,6 +24,10 @@ public class BlockBase extends Block implements IHasModel
 		
 		
 	}
+	
+	//Adding Morbus to character when you step on a Morbus block, highlights on UI and needs to be done ever so often
+	//Just like a addiction of some kind. Like "If you want that boosts you need that to do that"
+	//'boost' i have plans for Jump/Step 'fixes' and of course some movement-speed.
 
 	@Override
 	public void registerModels() 

@@ -14,7 +14,7 @@ public class ModBlocks
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
-	public static final Block MORBUS_DIRT_BLOCK = new Morbus_DirtBlock("morbus_dirt_block", Material.GRASS);
+	public static final Block MORBUS_DIRT_BLOCK = new Morbus_DirtBlock("morbus_dirt_block", Material.AIR);
 	public static final Block MORBUS_BRICK_BLOCK = new Morbus_BrickBlock("morbus_brick_block", Material.GROUND);
 	public static final Block MORBUS_BEDROCK_BLOCK = new Morbus_BedrockBlock("morbus_bedrock_block", Material.GROUND);
 	public static final Block MORBUS_ORE_BLOCK = new Morbus_BrickBlock("morbus_ore_block", Material.GROUND);
