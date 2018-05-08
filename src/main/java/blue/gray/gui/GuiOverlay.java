@@ -13,10 +13,8 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
 @EventBusSubscriber
 public class GuiOverlay extends Gui {
-	
 	private final ResourceLocation bar = new ResourceLocation(Reference.MOD_ID, "texture/gui/hpbar.png");
 	private final int tex_width = 102, tex_height = 8, bar_width = 100, bar_height = 6;	
-	
 	
 	public void renderOverlay(RenderGameOverlayEvent event) {
 		if(!event.isCancelable() && event.getType() == ElementType.EXPERIENCE) {
@@ -26,19 +24,9 @@ public class GuiOverlay extends Gui {
 				int posY = event.getResolution().getScaledHeight() - 48;
 				mc.renderEngine.bindTexture(bar);
 				mc.ingameGUI.drawTexturedModalRect(posX, posY, 0, 0, tex_width, tex_height);
-				
-				
+				mc.ingameGUI.drawTexturedModalRect(posX +1, posY +1, 0, 9, bar_width, bar_height);
 			}
 		}
 		
-		if(event.getType() == ElementType.TEXT) {
-			Minecraft mc = Minecraft.getMinecraft();
-			mc.renderEngine.bindTexture(bar);
-			drawTexturedModalRect(0,0,0,0,tex_width,tex_height);
-			
-		}
 	}
-
-
-
 }
