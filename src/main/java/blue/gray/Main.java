@@ -6,6 +6,7 @@ import blue.gray.init.ModCrafting;
 import blue.gray.init.ModItems;
 import blue.gray.proxy.CommonProxy;
 import blue.gray.util.Reference;
+import blue.gray.util.handlers.RegistryHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -25,9 +26,8 @@ public class Main
 	public static CommonProxy proxy;
 	
 	@EventHandler
-	public static void PreInit(FMLPreInitializationEvent event)
-	{
-
+	public static void PreInit(FMLPreInitializationEvent event)	{
+		RegistryHandler.otherRegistries();
 	}
 	@EventHandler
 	public static void Init(FMLInitializationEvent event)

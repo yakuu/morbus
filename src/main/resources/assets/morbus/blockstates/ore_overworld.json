@@ -1,0 +1,10 @@
+{
+    "variants":
+    {
+        "variant=morbus": { "model": "morbus:ore_overworld_morbus"},
+        "variant=miron": { "model": "morbus:ore_overworld_miron"},
+        "variant=mgold": { "model": "morbus:ore_overworld_mgold"}
+    }
+
+
+}
