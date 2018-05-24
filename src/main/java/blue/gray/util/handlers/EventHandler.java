@@ -4,11 +4,13 @@ import java.util.Random;
 
 import blue.gray.gui.GuiOverlay;
 import blue.gray.init.ModItems;
+import net.minecraft.command.AdvancementCommand;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -32,4 +34,15 @@ public class EventHandler {
 			}
 		}
 	}
+	
+	//Start for Advancements to run a command "/gamestage add player tutorial"
+	@SubscribeEvent
+	public void onJoinWorld(EntityJoinWorldEvent event){
+		if(event.getEntity() instanceof EntityPlayer) {
+			EntityPlayer player = (EntityPlayer)event.getEntity();
+		}
+	}
+	
+	
+	
 }
