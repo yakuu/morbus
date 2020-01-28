@@ -7,7 +7,6 @@ import blue.gray.init.ModItems;
 import blue.gray.util.IHasModel;
 import blue.gray.util.IMetaName;
 import blue.gray.util.handlers.EnumHandler;
-import blue.gray.util.handlers.EnumHandler.EnumType;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -26,7 +25,7 @@ import net.minecraft.world.World;
 public class BlockOres extends Block implements IHasModel, IMetaName {
 	
 	public static final PropertyEnum<EnumHandler.EnumType> VARIANT = PropertyEnum.<EnumHandler.EnumType>create("variant", EnumHandler.EnumType.class); 
-	private String name, dimension;
+	private String dimension;
 	
 	
 	public BlockOres(String name, String dimension) {
@@ -36,7 +35,6 @@ public class BlockOres extends Block implements IHasModel, IMetaName {
 		setCreativeTab(CreativeTabs.SEARCH);
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumType.MORBUS));
 		
-		this.name = name;
 		this.dimension = dimension;
 		
 		ModBlocks.BLOCKS.add(this);

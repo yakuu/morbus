@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern": 
+    [
+        "XIX",
+        "XIX",
+        "XOX"
+    ],
+    "key":
+    {
+        "O":
+        {
+        "item":"minecraft:stick",
+        "data": 0
+        },
+        "I":
+        {
+        "item":"morbus:morbus_brick"
+        }
+    },
+    "result":
+    {
+        "item": "morbus:morbus_sword",
+        "count": 1
+    }
+}

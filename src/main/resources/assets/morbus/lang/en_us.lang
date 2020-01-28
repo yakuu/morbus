@@ -12,3 +12,10 @@ tile.morbus_bedrock_block.name=Morbus Bedrock
 tile.ore_overworld_morbus.name=Morbus Ore
 tile.ore_overworld_miron.name=Morbus Iron Ore
 tile.ore_overworld_mgold.name=Morbus Gold Ore
+
+//Tools
+item.morbus_aiot.name=Morbus AIOT
+item.morbus_sword.name=Morbus Sword
+item.morbus_pickaxe.name=Morbus Pickaxe
+item.morbus_axe.name=Morbus Axe
+item.morbus_shovel.name=Morbus Shovel

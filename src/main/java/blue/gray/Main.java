@@ -1,9 +1,7 @@
 package blue.gray;
 
 import blue.gray.gui.GuiOverlay;
-import blue.gray.init.ModBlocks;
-import blue.gray.init.ModCrafting;
-import blue.gray.init.ModItems;
+import blue.gray.init.ModRecipes;
 import blue.gray.proxy.CommonProxy;
 import blue.gray.util.Reference;
 import blue.gray.util.handlers.RegistryHandler;
@@ -32,6 +30,7 @@ public class Main
 	@EventHandler
 	public static void Init(FMLInitializationEvent event)
 	{
+		ModRecipes.init();
 		//ModCrafting.register(); not used anymore since .json implementation
 	}
 	@EventHandler
