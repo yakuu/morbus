@@ -28,7 +28,7 @@ public class ModItems
 	
 	
 	//Materials
-	public static final ToolMaterial MATERIAL_MORBUS = EnumHelper.addToolMaterial("material_morbus", 2, 1244, 6.0f, 3.0f, 10);
+	public static final ToolMaterial MATERIAL_MORBUS = EnumHelper.addToolMaterial("material_morbus", 2, 1244, 11.0f, 3.0f, 10);
 	
 	//Planned function to emit light around it
 	public static final Item MORBUS_ANGEL_GEM = new Morbus_Angel_Gem("morbus_angel_gem");

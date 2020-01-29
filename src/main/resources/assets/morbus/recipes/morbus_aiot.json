@@ -1,0 +1,28 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "morbus:morbus_axe"
+    },
+
+    {
+      "item": "morbus:morbus_sword"
+    },
+    {
+      "item": "morbus:morbus_shovel"
+    },
+    {
+      "item": "morbus:morbus_pickaxe"
+    }    
+    
+    ],
+
+    "result": 
+    {
+        "item": "morbus:morbus_aiot",
+        "count": 1
+    }
+}

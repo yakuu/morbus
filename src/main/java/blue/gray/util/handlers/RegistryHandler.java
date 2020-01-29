@@ -1,5 +1,6 @@
 package blue.gray.util.handlers;
 
+import blue.gray.blocks.container.TileEntityMorbus_Chest;
 import blue.gray.init.ModBlocks;
 import blue.gray.init.ModItems;
 import blue.gray.util.IHasModel;
@@ -8,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -25,6 +27,8 @@ public class RegistryHandler
 	public static void onBlockRegister(RegistryEvent.Register<Block> event)
 	{
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+		TileEntityHandler.registerTileEntities();
+		//ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMorbus_Chest.class, new RenderMorbus_Chest);
 	}
 	
 	@SubscribeEvent

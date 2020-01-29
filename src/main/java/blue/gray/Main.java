@@ -4,6 +4,7 @@ import blue.gray.gui.GuiOverlay;
 import blue.gray.init.ModRecipes;
 import blue.gray.proxy.CommonProxy;
 import blue.gray.util.Reference;
+import blue.gray.util.handlers.GuiHandler;
 import blue.gray.util.handlers.RegistryHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -13,6 +14,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class Main 
@@ -32,6 +34,7 @@ public class Main
 	{
 		ModRecipes.init();
 		//ModCrafting.register(); not used anymore since .json implementation
+		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
 	}
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event)

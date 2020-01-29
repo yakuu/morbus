@@ -1,20 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " # ",
-        " # ",
-        " / "
+        "# #",
+        "# #",
+        "###"
     ],
     "key": {
         "#": {
             "item": "morbus:morbus_brick"
-        },
-        "/": {
-            "item": "minecraft:stick"
         }
     },
     "result": {
-        "item": "morbus:morbus_sword",
+        "item": "morbus:morbus_cauldron",
         "count": 1
     }
 }

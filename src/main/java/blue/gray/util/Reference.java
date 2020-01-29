@@ -8,5 +8,7 @@ public class Reference
 	public static final String ACCEPTED_VERSIONS = "[1.12.2]";
 	public static final String CLIENT_PROXY_CLASS = "blue.gray.proxy.ClientProxy";
 	public static final String COMMON_PROXY_CLASS = "blue.gray.proxy.CommonProxy";
+	//Adding the Chest GUI
+	public static final int GUI_MORBUS_CHEST = 2;
 	
 }

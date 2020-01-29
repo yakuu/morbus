@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         " # ",
-        " # ",
+        " / ",
         " / "
     ],
     "key": {
@@ -14,7 +14,7 @@
         }
     },
     "result": {
-        "item": "morbus:morbus_sword",
+        "item": "morbus:morbus_shovel",
         "count": 1
     }
 }
