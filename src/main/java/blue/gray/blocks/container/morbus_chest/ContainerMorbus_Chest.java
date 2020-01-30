@@ -19,7 +19,7 @@ public class ContainerMorbus_Chest extends Container
 		
 		for(int y = 0; y < numRows; ++y) {
 			for(int x = 0; x < 9; ++x) {
-				this.addSlotToContainer(new Slot(chestInventory, x + y * 9, 8 + x + 18, 18 + y * 18));
+				this.addSlotToContainer(new Slot(chestInventory, x + y * 9, 8 + x * 18, 18 + y * 18));
 			}
 		}
 		for(int y = 0; y < 3; y++)
