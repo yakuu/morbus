@@ -1,6 +1,6 @@
 package blue.gray.util.handlers;
 
-import blue.gray.blocks.container.TileEntityMorbus_Chest;
+import blue.gray.blocks.container.morbus_chest.TileEntityMorbus_Chest;
 import blue.gray.util.Reference;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;

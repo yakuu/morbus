@@ -1,6 +1,8 @@
 package blue.gray.util.handlers;
 
-import blue.gray.blocks.container.TileEntityMorbus_Chest;
+import blue.gray.Main;
+import blue.gray.blocks.container.morbus_chest.RenderMorbus_Chest;
+import blue.gray.blocks.container.morbus_chest.TileEntityMorbus_Chest;
 import blue.gray.init.ModBlocks;
 import blue.gray.init.ModItems;
 import blue.gray.util.IHasModel;
@@ -28,12 +30,13 @@ public class RegistryHandler
 	{
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 		TileEntityHandler.registerTileEntities();
-		//ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMorbus_Chest.class, new RenderMorbus_Chest);
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMorbus_Chest.class, new RenderMorbus_Chest());
 	}
 	
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event)
 	{
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(ModBlocks.MORBUS_CHEST), 0, "inventory");
 		for(Item item : ModItems.ITEMS) 
 		{
 			if(item instanceof IHasModel)

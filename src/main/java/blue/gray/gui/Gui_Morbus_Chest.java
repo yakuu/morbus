@@ -1,7 +1,7 @@
 package blue.gray.gui;
 
-import blue.gray.blocks.container.ContainerMorbus_Chest;
-import blue.gray.blocks.container.TileEntityMorbus_Chest;
+import blue.gray.blocks.container.morbus_chest.ContainerMorbus_Chest;
+import blue.gray.blocks.container.morbus_chest.TileEntityMorbus_Chest;
 import blue.gray.util.Reference;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
@@ -21,8 +21,8 @@ public class Gui_Morbus_Chest extends GuiContainer
 		this.playerInv = playerInv;
 		this.te = chestInv;
 		
-		this.xSize = 351;
-		this.ySize = 443;
+		this.xSize = 175;
+		this.ySize = 222;
 	}
 
 	@Override

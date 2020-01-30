@@ -7,6 +7,7 @@ item.morbus_angel_gem.name=Angel Gem
 tile.morbus_dirt_block.name=Morbus Dirt
 tile.morbus_brick_block.name=Morbus Bricks Block
 tile.morbus_bedrock_block.name=Morbus Bedrock
+tile.morbus_chest.name=Morbus Chest
 
 //Ores
 tile.ore_overworld_morbus.name=Morbus Ore

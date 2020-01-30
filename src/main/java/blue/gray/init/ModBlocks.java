@@ -7,7 +7,7 @@ import blue.gray.blocks.BlockOres;
 import blue.gray.blocks.Morbus_BedrockBlock;
 import blue.gray.blocks.Morbus_BrickBlock;
 import blue.gray.blocks.Morbus_DirtBlock;
-import blue.gray.blocks.container.Morbus_Chest;
+import blue.gray.blocks.container.morbus_chest.Morbus_Chest;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
