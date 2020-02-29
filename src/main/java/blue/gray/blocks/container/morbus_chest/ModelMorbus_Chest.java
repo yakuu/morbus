@@ -17,13 +17,8 @@ public class ModelMorbus_Chest extends ModelBase {
 
 		bb_main = new ModelRenderer(this);
 		bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -5.0F, -6.0F, -7.0F, 10, 6, 1, 0.0F, false));
-		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -5.0F, -6.0F, 5.0F, 10, 6, 1, 0.0F, false));
-		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -6.0F, -6.0F, -7.0F, 1, 6, 13, 0.0F, false));
-		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, 5.0F, -6.0F, -7.0F, 1, 6, 13, 0.0F, false));
-		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -5.0F, -1.0F, -6.0F, 10, 1, 11, 0.0F, false));
-		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -5.0F, -6.0F, -6.0F, 10, 1, 11, 0.0F, false));
-		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -6.0F, -7.0F, -7.0F, 12, 1, 13, 0.0F, false));
+		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -1.0F, -12.0F, -9.0F, 16, 10, 16, 0.0F, false));
+		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -1.0F, -14.0F, -9.0F, 16, 2, 16, 0.0F, false));
 	}
 
 	@Override
@@ -44,3 +39,10 @@ public class ModelMorbus_Chest extends ModelBase {
 		this.bb_main.render(0.0625f);
 	}
 }
+
+
+
+
+
+
+

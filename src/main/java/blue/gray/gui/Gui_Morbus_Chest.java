@@ -1,6 +1,6 @@
 package blue.gray.gui;
 
-import blue.gray.blocks.container.morbus_chest.ContainerMorbus_Chest;
+import blue.gray.blocks.container.morbus_chest.ContainerMorbusChest;
 import blue.gray.blocks.container.morbus_chest.TileEntityMorbus_Chest;
 import blue.gray.util.Reference;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -17,7 +17,7 @@ public class Gui_Morbus_Chest extends GuiContainer
 	
 	public Gui_Morbus_Chest(InventoryPlayer playerInv, TileEntityMorbus_Chest chestInv, EntityPlayer player) 
 	{
-		super(new ContainerMorbus_Chest(playerInv, chestInv, player));
+		super(new ContainerMorbusChest(playerInv, chestInv, player));
 		this.playerInv = playerInv;
 		this.te = chestInv;
 		

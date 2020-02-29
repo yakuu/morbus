@@ -84,7 +84,7 @@ public class TileEntityMorbus_Chest extends TileEntityLockableLoot implements IT
 	@Override
 	public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) 
 	{
-		return new ContainerMorbus_Chest(playerInventory, this, playerIn);
+		return new ContainerMorbusChest(playerInventory, this, playerIn);
 	}
 
 	@Override
@@ -103,9 +103,9 @@ public class TileEntityMorbus_Chest extends TileEntityLockableLoot implements IT
 
             for (EntityPlayer entityplayer : this.world.getEntitiesWithinAABB(EntityPlayer.class, new AxisAlignedBB((double)((float)pos.getX() - 5.0F), (double)((float)pos.getY() - 5.0F), (double)((float)pos.getZ() - 5.0F), (double)((float)(pos.getX() + 1) + 5.0F), (double)((float)(pos.getY() + 1) + 5.0F), (double)((float)(pos.getZ() + 1) + 5.0F))))
             {
-                if (entityplayer.openContainer instanceof ContainerMorbus_Chest)
+                if (entityplayer.openContainer instanceof ContainerMorbusChest)
                 {
-                    if (((ContainerMorbus_Chest)entityplayer.openContainer).getChestInventory() == this)
+                    if (((ContainerMorbusChest)entityplayer.openContainer).getChestInventory() == this)
                     {
                         ++this.numPlayersUsing;
                     }
